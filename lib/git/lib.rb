@@ -736,7 +736,7 @@ module Git
     end
 
 
-    def fetch(remote, ref = nil, opts)
+    def fetch(remote, opts)
       arr_opts = [remote]
       arr_opts << opts[:ref] if opts[:ref]
       arr_opts << '--tags' if opts[:t] || opts[:tags]
